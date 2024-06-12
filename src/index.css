@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Fondamento:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Quintessential&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+#root {
+  height: 100vh;
+}
+
+body,
+input,
+select,
+button,
+textarea {
+  font-size: 16px;
+  font-family: Montserrat;
+}
+
+.grid-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-columns: 1fr;
+}
+
+a:hover {
+  color: #ff8000;
+}
+
+
+header {
+  grid-area: header;
+  background-color: #203040;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #203040;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main {
+  flex: 3 60rem;
+}
+
+.sidebar {
+  flex: 1 30rem;
+}
+
+
+/* products */
+
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+.products li {
+  flex: 0 1 0rem;
+  height: 33rem;
+  padding: 1rem;
+}
+
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+p {
+  font-family: Montserrat;
+}
+
+
+.product img {
+  min-width: 18rem;
+  max-height: 25rem;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Montserrat;
+}
+
+.product-price div,
+.product-price button {
+  text-align: center;
+  flex: 1;
+}
+
+.product-price div {
+  font-size: 28px;
+}
+
+.button {
+  padding: 1rem;
+  border: .1rem #c0c0c0 solid;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  font-family: Montserrat;
+}
+
+.button.primary {
+  background-color: #f0c040;
+}
+
+.button:hover {
+  border: 0.1rem #808080 solid;
+}
+
+
+
+/* Filter */
+
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border-bottom: .1rem #c0c0c0 solid;
+}
+
+
+.filter div {
+  flex: 1;
+}
+
+
+
+/* Index.css */
+
+.cart {
+  padding: 20.5px;
+  display: flex;
+  margin: 10px;
+}
+
+
+.cart-header {
+  border-bottom: 0.1rem #c0c0c0 solid;
+}
+
+.cart-items {
+  width: 100%;
+  list-style-type: none;
+}
+
+.cart-items img {
+  width: 80px;
+}
+
+.cart-items li {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  
+}
+
+.cart-items div {
+  padding: 10px;
+}
+
+.cart-items li :last-child {
+  flex: 1;
+}
+
+.right {
+  text-align: right;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.total > div{
+  font-size: 2rem;
+}
+
+.total > div, .total > button {
+  flex: 1;
+}
+
+
+.notification{
+  width: 70%;
+  position: relative;
+  left: 20px;
+}
+
+
+/* Chejout form */
+
+form{
+  width: 100%;
+}
+
+.form-container{
+  list-style-type: none;
+}
+
+.form-container li{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+input{
+  padding: 10px;
+  border: 1px solid #c0c0c0;
+}

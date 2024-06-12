@@ -269,7 +269,7 @@ input {
 }
 
 .product-details img {
-  max-height: 100vh;
+  max-height: 80vh;
   max-width: 46rem;
   margin: 0 auto;
 }

@@ -104,7 +104,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
 }
 
 p {
@@ -140,6 +139,8 @@ p {
   background-color: #f0f0f0;
   cursor: pointer;
   font-family: Montserrat;
+  border: none;
+  border-radius: 50px;
 }
 
 .button.primary {
@@ -197,7 +198,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: start;
-  
+
 }
 
 .cart-items div {
@@ -219,39 +220,95 @@ p {
   width: 100%;
 }
 
-.total > div{
+.total>div {
   font-size: 2rem;
 }
 
-.total > div, .total > button {
+.total>div,
+.total>button {
   flex: 1;
 }
 
 
-.notification{
+.notification {
   width: 70%;
   position: relative;
   left: 20px;
 }
 
 
-/* Chejout form */
+/* Checout form */
 
-form{
+form {
   width: 100%;
 }
 
-.form-container{
+.form-container {
   list-style-type: none;
 }
 
-.form-container li{
+.form-container li {
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
 
-input{
+input {
   padding: 10px;
   border: 1px solid #c0c0c0;
+}
+
+
+/* product details */
+
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-height: 96vh;
+}
+
+.product-details img {
+  max-height: 100vh;
+  max-width: 46rem;
+  margin: 0 auto;
+}
+
+.product-details-description {
+  flex: 1 1;
+  margin: 1rem;
+}
+
+.close-modal {
+  position: absolute;
+  right: 1rem;
+  top: 2.5rem;
+  z-index: 1000;
+}
+
+.product-price {
+  height: 1 50px;
+  position: relative;
+  top: 20px;
+}
+
+.AddToCartBtn{
+  height: 50px;
+  background: #ff8000;
+  border: none;
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+
+.close-modal{
+  width: 50px;
+  height: 50px;
+  background: #ff8000;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
 }
